@@ -4,8 +4,7 @@ from django.views.generic import TemplateView
 
 def photo_list():
     def photo_details(i, f):
-        caption = f'Caption for Photo {i}' if i == 1 else None
-        return dict(id=i, file=f, caption=caption)
+        return dict(id=i, file=f)
 
     photos = Path('static/images').iterdir()
     photos = [photo_details(i, f) for i, f in enumerate(photos)]
