@@ -2,9 +2,9 @@ from pathlib import Path
 from django.views.generic import TemplateView
 
 herolist = [
-    {"Name" : "Richard Nixon", "Strengths" : "Cool new advancements in electronics, swagger", "Weaknesses" : "Canada, The TRUTH", "Image" : "/static/images/1.webp"},
-    {"Name" : "Peter Griffin", "Strengths" : "Middle class income, strong support system", "Weaknesses" : "Alcoholism, His Wife", "Image" : "/static/images/2.png"},
-    {"Name" : "Howard Hughes", "Strengths" : "Absolutely decimating a steak, staying in a movie theatre for 4 months", "Weaknesses" : "OCD, Planes", "Image" : "/static/images/3.jpg"}
+    {"id" : 0, "Name" : "Richard Nixon", "Strengths" : "Cool new advancements in electronics, swagger", "Weaknesses" : "Canada, The TRUTH", "Image" : "/static/images/1.webp"},
+    {"id" : 1, "Name" : "Peter Griffin", "Strengths" : "Middle class income, strong support system", "Weaknesses" : "Alcoholism, His Wife", "Image" : "/static/images/2.png"},
+    {"id" : 2, "Name" : "Howard Hughes", "Strengths" : "Absolutely decimating a steak, staying in a movie theatre for 4 months", "Weaknesses" : "OCD, Planes", "Image" : "/static/images/3.jpg"}
 ]
 
 def photo_list():
