@@ -1,12 +1,11 @@
 from pathlib import Path
 from django.views.generic import TemplateView
 
-heroes = {
-    # Name, Strengths, Weaknesses
-    1 : ["Richard Nixon", "Cool new advancements in electronics, swagger", "Canada, The TRUTH"],
-    2 : ["Peter Griffin", "Middle class income, strong support system", "Alcoholism, His Wife"],
-    3 : ["Howard Hughes", "Absolutely decimating a steak, staying in a movie theatre for 4 months", "OCD, Planes"]
-}
+herolist = [
+    {"Name" : "Richard Nixon", "Strengths" : "Cool new advancements in electronics, swagger", "Weaknesses" : "Canada, The TRUTH", "Image" : "/static/images/1.webp"},
+    {"Name" : "Peter Griffin", "Strengths" : "Middle class income, strong support system", "Weaknesses" : "Alcoholism, His Wife", "Image" : "/static/images/2.png"},
+    {"Name" : "Howard Hughes", "Strengths" : "Absolutely decimating a steak, staying in a movie theatre for 4 months", "Weaknesses" : "OCD, Planes", "Image" : "/static/images/3.jpg"}
+]
 
 def photo_list():
     def photo_details(i, f):
@@ -31,4 +30,7 @@ class HeroDetailView(TemplateView):
         i = kwargs['id']
         photos = photo_list()
         p = photos[i]
-        return dict(photo=p)
+        
+        return herolist[i]
+
+        #return dict(photo=p)

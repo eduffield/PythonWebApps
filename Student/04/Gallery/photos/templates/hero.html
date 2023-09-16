@@ -4,20 +4,18 @@
 <h3 style="text-align: center;"><i>Meet This Guy!</i></h3>
 
 <p>
-    <img class="photo" src="/{{ photo.file }}" alt="Chapter {{ photo.id }}">
+    <img class="photo" src="/{{ Image }}">
 </p>
 <p>
     The stats!:
     
-    {% if photo.caption %}
-    {{ photo.caption }}
-    {% else %}
-    None!!!
-    {% endif%}
+    Name: {{Name}}
+    Strengths: {{Strengths}}
+    Weaknesses: {{Weaknesses}}
 
 </p>
 <p>
-    Get This Guy @: {{ photo.file }}
+    Get This Guy @: {{ Image }}
 </p>
 
 
