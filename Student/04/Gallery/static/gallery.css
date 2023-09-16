@@ -27,4 +27,8 @@ h1 {
     padding: 10px 20px; /* Add padding as needed */
     border-radius: 5px; /* Add border radius for rounded corners */
 }
-  
+body {
+    background-color: white;
+    color: blue;
+    text-align: center;
+}
