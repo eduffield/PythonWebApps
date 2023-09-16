@@ -2,29 +2,31 @@ envs:
 - key: DISABLE_COLLECTSTATIC
   scope: RUN_AND_BUILD_TIME
   value: "1"
-name: squid-app
+name: bacs350-app
 region: nyc
 services:
 - environment_slug: python
   github:
     branch: main
     deploy_on_push: true
-    repo: ElfazM/PythonWebApps
+    repo: eduffield/PythonWebApps
   http_port: 8080
   instance_count: 1
   instance_size_slug: basic-xxs
-  name: myapp
+  name: bacs350-app-demo
   routes:
   - path: /
-  run_command: gunicorn --worker-tmp-dir /dev/shm config.wsgi
-  source_dir: 04/Superhero
+  run_command: |
+    python manage.py migrate --no-input
+    gunicorn --worker-tmp-dir /dev/shm config.wsgi
+  source_dir: Student/04/Superhero
 static_sites:
 - environment_slug: html
   github:
     branch: main
     deploy_on_push: true
-    repo: ElfazM/PythonWebApps
-  name: myapp-static
+    repo: eduffield/PythonWebApps
+  name: bacs350-app-static
   routes:
   - path: /static
-  source_dir: 04/Superhero/static
+  source_dir: Student/04/Superhero/static
