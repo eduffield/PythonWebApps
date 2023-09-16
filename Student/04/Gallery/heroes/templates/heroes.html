@@ -7,7 +7,7 @@
 {% for photo in photos %}
 
 <a href="/hero/{{ photo.id }}">
-    <img class="photo" src="/{{ photo.file }}" alt="Hero {{ photo.id }}" width="200">
+    <img class="photo" src="{{ photo.file }}" alt="Hero {{ photo.id }}" width="200">
 </a>
 
 {% endfor %}
