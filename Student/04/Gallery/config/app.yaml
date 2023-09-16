@@ -19,7 +19,7 @@ services:
   run_command: |
     python manage.py migrate --no-input
     gunicorn --worker-tmp-dir /dev/shm config.wsgi
-  source_dir: Student/04/Superhero
+  source_dir: Student/04/Gallery
 static_sites:
 - environment_slug: html
   github:
@@ -29,4 +29,4 @@ static_sites:
   name: bacs350-app-static
   routes:
   - path: /static
-  source_dir: Student/04/Superhero/static
+  source_dir: Student/04/Gallery/static

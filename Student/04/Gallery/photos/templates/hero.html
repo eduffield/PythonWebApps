@@ -1,25 +1,23 @@
 {% extends 'theme.html' %}
-
-
-
 {% block content %}
 
-<h3>Photo Detail</h3>
+<h3 style="text-align: center;"><i>Meet This Guy!</i></h3>
 
 <p>
     <img class="photo" src="/{{ photo.file }}" alt="Chapter {{ photo.id }}">
 </p>
 <p>
-    CAPTION:
+    The stats!:
+    
     {% if photo.caption %}
     {{ photo.caption }}
     {% else %}
-    No caption
+    None!!!
     {% endif%}
 
 </p>
 <p>
-    FILE PATH: {{ photo.file }}
+    Get This Guy @: {{ photo.file }}
 </p>
 
 
