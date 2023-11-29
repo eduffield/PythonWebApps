@@ -20,24 +20,26 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/4.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-gs$@-yb8=7@aom+qo@e*cyh$r%)g2_how7a1p+l_d@5+34ha$s'
+SECRET_KEY = 'django-insecure-a8s577-*0rnnb%@+*9vct()uqvh%6yj=o=vvrje-5*4=wso@g('
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
+# Handle all URL requests made to web server
 ALLOWED_HOSTS = ['*']
 
-
-# Application definition
+CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
 INSTALLED_APPS = [
+    "crispy_forms",
+    "crispy_bootstrap4",
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'hero',
+    'SuperHeroes',
 ]
 
 MIDDLEWARE = [
@@ -116,8 +118,11 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
 
+# On Digital Ocean it will use the Static Server
+# Locally you need to enable the static media server (Images, CSS, Javascript)
 STATIC_URL = '/static/'
 STATICFILES_DIRS = [BASE_DIR / "static"]
+STATIC_ROOT = "static_assets/"
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
