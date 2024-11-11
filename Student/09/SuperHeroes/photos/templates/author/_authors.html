@@ -1,0 +1,24 @@
+<div class="card col-lg">
+
+    <div class="card-header author">
+        Investigators in the SIU
+    </div>
+    <div class="card-body">
+        <table class="table table-hover">
+            <tr>
+                <th>Investigator</th>
+                <th>Description</th>
+            </tr>
+
+            {% for author in authors %}
+            <tr>
+                <td><a href="/author/{{ author.pk }}">{{ author.name }}</a></td>
+                <td>{{ author.bio }}</td>
+                <td><a href="/author/{{ author.pk }}/">Edit</a></td>
+            </tr>
+            {% endfor %}
+
+        </table>
+    </div>
+
+</div>

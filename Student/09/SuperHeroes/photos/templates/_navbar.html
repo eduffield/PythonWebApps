@@ -1,0 +1,51 @@
+<nav class="navbar navbar-expand-sm navbar-dark bg-dark text-light">
+
+    <div class="container">
+
+        <a class="navbar-brand text-light" href="/">SIU - SuperHero Investigative Unit</a>
+
+        <ul class="navbar-nav text-light ml-auto">
+            <li class="nav-item">
+                <a class="nav-link text-light" href="{% url 'author_list' %}">Investigators</a>
+            </li>
+            
+            <li class="nav-item">
+                <a class="nav-link text-light" href="/photo/carousel">Recent Sightings</a>
+            </li>
+
+            {% if user.is_authenticated %}
+            <!--<li class="nav-item">
+                <a class="nav-link  text-light " href="/admin/">Admin</a>
+            </li> -->
+            <li class="nav-item">
+                <a class="nav-link text-light" href="{% url 'author_home' %}">My Sightings</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link  text-light " href="{% url 'author_home' %}">Welcome, {{ user.username }}</a>
+            </li>
+            <li class="nav-item">
+                <form action="{% url 'logout' %}" method="post" style="display: inline;">
+                    {% csrf_token %}
+                    <button type="submit" class="nav-link text-light" style="background: none; border: none; padding: 0; cursor: pointer;">
+                        Log out
+                    </button>
+                </form>
+            </li>
+
+            {% else %}
+
+            <li class="nav-item">
+                <a class="nav-link  text-light " href="{% url 'login' %}">Log In</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link  text-light " href="{% url 'author_add' %}">Sign Up</a>
+            </li>
+
+            {% endif %}
+
+        </ul>
+
+    </div>
+
+</nav>
