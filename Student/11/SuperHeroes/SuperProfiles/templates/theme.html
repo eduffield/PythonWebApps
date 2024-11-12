@@ -15,6 +15,26 @@
     {% include 'navbar.html' %}
     {% endblock navbar %}
 
+    <style>
+    header {
+        background-image: url('https://t3.ftcdn.net/jpg/09/53/99/14/360_F_953991400_vgEInOLEJbMFmvjMaKrCxKPw8FCEjI7Z.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 200px;
+    }
+    header h1, header h2 {
+        color: white;
+    }
+
+
+    </style>
+
+    <header class="bg-info p-5 mb-5">
+        <h1>SuperHero Investigative Society</h1>
+        <h2>Citizen Journalists reporting the Truth</h2>
+    </header>
+
     {% block content %}
     <h2>No Block Defined</h2>
     {% endblock content %}
