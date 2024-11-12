@@ -5,10 +5,17 @@ from django.urls import reverse_lazy
 from django.contrib.auth.mixins import LoginRequiredMixin
 from .views_functions import IsHeroCreatorMixin, card_data, document_card
 from django.views.generic import CreateView, DeleteView, DetailView, ListView, UpdateView, TemplateView
-from django.shortcuts import get_object_or_404
+from django.shortcuts import get_object_or_404, redirect #############
 from .models import Hero, Article
 from .views_reporter import get_reporter
-    
+
+from django.contrib.auth import logout ##################
+
+def custom_logout_view(request): ##################
+    logout(request)
+    return redirect('/')
+
+
 class HeroListView(ListView):
     template_name = 'hero/list.html'
     model = Hero

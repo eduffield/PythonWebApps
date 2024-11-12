@@ -3,17 +3,21 @@ from django.conf.urls.static import static
 from django.contrib import admin
 from django.urls import path, include
 from django.views.generic import RedirectView
-from SuperProfiles.views_hero import HeroDetailView, HeroListView, HeroCreateView, HeroUpdateView, HeroDeleteView, HeroTabsView, HeroCarouselView
+from SuperProfiles.views_hero import HeroDetailView, HeroListView, HeroCreateView, HeroUpdateView, HeroDeleteView, HeroTabsView, HeroCarouselView, custom_logout_view ###########
 from SuperProfiles.views_article import ArticleDetailView, ArticleListView, ArticleCreateView, ArticleUpdateView, ArticleDeleteView
 from SuperProfiles.views_reporter import ReporterHomeView, ReporterAddView, ReporterDetailView, ReporterListView, ReporterUpdateView
 from SuperProfiles.views_photo import PhotoCarouselView, PhotoCreateView, PhotoDetailView, PhotoUpdateView, PhotoDeleteView
 from SuperProfiles.views_functions import exportArticleJSONData, loadArticleJSONData, exportArticleCSVData, loadArticleCSVData, exportHeroJSONData, loadHeroJSONData, exportHeroCSVData, loadHeroCSVData
+
+from django.contrib.auth import views as auth_views #############################
 
 urlpatterns = [
     path("admin/", admin.site.urls),
     path('accounts/', include('django.contrib.auth.urls')),
     path('accounts/profile/',  RedirectView.as_view(url='/reporter/home')),
     path('',                     RedirectView.as_view(url='hero/')),
+
+    path('logout/', custom_logout_view, name='logout'), ##########################
 
     path('hero/',                HeroCarouselView.as_view(),    name='hero_list'),
     path('hero/<int:pk>',        HeroTabsView.as_view(),  name='hero_detail'),
