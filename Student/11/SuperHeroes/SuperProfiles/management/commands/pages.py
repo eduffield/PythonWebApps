@@ -6,13 +6,13 @@ class Command(BaseCommand):
     def handle(self, *args, **options):
 
         pages = {
-            "https://urchin-app-v99by.ondigitalocean.app/",
-            "https://urchin-app-v99by.ondigitalocean.app/hero/",
-            "https://urchin-app-v99by.ondigitalocean.app/hero/add",
-            "https://urchin-app-v99by.ondigitalocean.app/reporter/",
-            "https://urchin-app-v99by.ondigitalocean.app/reporter/add",
-            "https://urchin-app-v99by.ondigitalocean.app/article/",
-            "https://urchin-app-v99by.ondigitalocean.app/article/add"
+            "https://jellyfish-app-m5nzs.ondigitalocean.app/",
+            "https://jellyfish-app-m5nzs.ondigitalocean.app/hero/",
+            "https://jellyfish-app-m5nzs.ondigitalocean.app/hero/add",
+            "https://jellyfish-app-m5nzs.ondigitalocean.app/reporter/",
+            "https://jellyfish-app-m5nzs.ondigitalocean.app/reporter/add",
+            "https://jellyfish-app-m5nzs.ondigitalocean.app/article/",
+            "https://jellyfish-app-m5nzs.ondigitalocean.app/article/add"
                 }
         
         for page in pages:
