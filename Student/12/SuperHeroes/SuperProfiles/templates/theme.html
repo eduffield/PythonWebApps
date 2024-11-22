@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{ title }}</title>
+</head>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+
+<body>
+
+    {% block navbar %}
+    {% include 'navbar.html' %}
+    {% endblock navbar %}
+
+    <style>
+    header {
+        background-image: url('https://t3.ftcdn.net/jpg/09/53/99/14/360_F_953991400_vgEInOLEJbMFmvjMaKrCxKPw8FCEjI7Z.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 200px;
+    }
+    header h1, header h2 {
+        color: white;
+    }
+
+
+    </style>
+
+    <header class="bg-info p-5 mb-5">
+        <h1>SuperHero Investigative Society</h1>
+        <h2>Citizen Journalists reporting the Truth</h2>
+    </header>
+
+    {% block content %}
+    <h2>No Block Defined</h2>
+    {% endblock content %}
+
+</body>
+
+</html>

@@ -1,0 +1,66 @@
+[
+{
+  "model": "SuperProfiles.hero",
+  "pk": 2,
+  "fields": {
+    "reporter": 2,
+    "title": "Polka dot man",
+    "realName": "Some guy",
+    "strength1": "etc",
+    "strength2": "etc",
+    "strength3": "etc",
+    "weakness1": "etc",
+    "weakness2": "etc",
+    "weakness3": "etc",
+    "photo": 2
+  }
+},
+{
+  "model": "SuperProfiles.hero",
+  "pk": 3,
+  "fields": {
+    "reporter": 2,
+    "title": "Clock-Man",
+    "realName": "Some dude, yet again",
+    "strength1": "Time Power",
+    "strength2": "etc",
+    "strength3": "etc",
+    "weakness1": "etc",
+    "weakness2": "etc",
+    "weakness3": "etc",
+    "photo": 3
+  }
+},
+{
+  "model": "SuperProfiles.hero",
+  "pk": 4,
+  "fields": {
+    "reporter": 3,
+    "title": "The Pointer",
+    "realName": "Ted Point",
+    "strength1": "Pointing",
+    "strength2": "etc",
+    "strength3": "etc",
+    "weakness1": "Being pointed at",
+    "weakness2": "etc",
+    "weakness3": "etc",
+    "photo": 4
+  }
+},
+{
+  "model": "SuperProfiles.hero",
+  "pk": 5,
+  "fields": {
+    "reporter": 3,
+    "title": "Floater",
+    "realName": "Johnny Janer",
+    "strength1": "Floats",
+    "strength2": "nothing else",
+    "strength3": "etc",
+    "weakness1": "Ankle weights",
+    "weakness2": "etc",
+    "weakness3": "etc",
+    "photo": 5
+  }
+}
+]
