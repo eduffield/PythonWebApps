@@ -1,0 +1,46 @@
+[
+    {
+      "model": "SuperProfiles.article",
+      "pk": 2,
+      "fields": {
+        "reporter": 2,
+        "title": "Polka Dot Man",
+        "profile": "Profile of a mad man",
+        "description": "Polka Dot Man born Abner Krill was once considered one of Gothams more eccentric villains. His unique ability allowed him to unleash a variety of polka dot-themed gadgets ranging from explosive dots to devices that generated blinding flashes. Ridiculed by more notorious villains for his seemingly trivial powers Polka Dot Man often struggled with self-doubt but managed to surprise his foes with his creativity in battle. In one infamous incident he thwarted a local crime lord by creating a dense fog of dots that confused the henchmen long enough for the authorities to arrive. For Polka Dot Man even the smallest tools could be used to make a big impact.",
+        "photo": 2
+      }
+    },
+    {
+      "model": "SuperProfiles.article",
+      "pk": 3,
+      "fields": {
+        "reporter": 2,
+        "title": "Clock-Man changes the timeline",
+        "profile": "World history will never be the same.",
+        "description": "Clock-Man a former antique dealer discovered a magic pocket watch that granted him the ability to manipulate time. With each tick he could rewind fast forward or pause moments at will though each use came with an unpredictable side effect. Once in an attempt to prevent a small street altercation Clock-Man rewound time just a few seconds but this tiny adjustment caused a butterfly effect altering the course of events for days. His accidental interference led to several missed appointments canceled plans and even changed the outcome of a minor election. The experience left him wary realizing that even minor tweaks to time could have rippling consequences.",
+        "photo": 3
+      }
+    },
+    {
+      "model": "SuperProfiles.article",
+      "pk": 4,
+      "fields": {
+        "reporter": 3,
+        "title": "The Pointer strikes at the local Whole Foods",
+        "profile": "Witnesses say someone cut him in line",
+        "description": "The Pointer was a man with a peculiar yet unmistakable power his ability to point with unmatched precision. His pointing could compel people to notice things they hadnt before or shame them with a single accusatory gesture. One afternoon at a crowded Whole Foods a shopper brazenly cut the line eliciting murmurs but no action. The Pointer stepped up fixing his infamous glare on the offender and pointing unwavering as the entire line turned to witness. The culprit visibly embarrassed retreated to the back aware that in the world of The Pointer no misdeed went uncalled.",
+        "photo": 4
+      }
+    },
+    {
+      "model": "SuperProfiles.article",
+      "pk": 5,
+      "fields": {
+        "reporter": 3,
+        "title": "Floater knows no peace",
+        "profile": "Seen levitating above a familys patio... menacingly",
+        "description": "Floater was an enigmatic figure who preferred to linger above the daily lives of the unsuspecting. One evening a family gathered on their patio for a barbecue only to look up and see a figure drifting silently above them. He hovered just beyond their reach his expression hidden by shadows giving no hint of his intentions. They watched him both frightened and fascinated as he simply floated unmoved by the familys reactions. The next day Floater was gone as mysteriously as hed arrived leaving the family with only questions and a lasting sense of unease about the quiet man who hovered without a sound.",
+        "photo": 5
+      }
+    }
+]  
